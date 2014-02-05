@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>balint.us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <link rel='shortcut icon' href='favicon.ico'>
+    <link rel='stylesheet' href='css/skeleton-min.css'>
+    <link rel='stylesheet' href='css/main.css'>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-40062051-2', 'balint.us');
+    ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <canvas id='aurora'></canvas>
+    <div class='container'>
+        <div id='header' class='sixteen columns'>
+            <a href='http://balint.us'>
+                <h1 class='remove-bottom'>balint.<b>us</b>
+                </h1>
+            </a>
+        </div>
+        <div class='one-third column'>
+            <h3>about me</h3>
+            <p>My name's Michael. I'm a hacker with an appreciation for art.</p>
+            <p>My background is in Applied Math and Computer Science. Currently, I'm doing a lot with Machine Learning and Natural Language Processing, but I also love experimenting with web visualization. I'm an avid traveler and photographer.</p>
+            <p>I never want to stop learning new things, coming up with new ideas, and exploring new places. This site is an attempt to consolidate my hobbies in one place and encourage me to continue to build, be creative, and grow.</p>
+        </div>
+        <div id='recent' class='one-third column'>
+            <h3>recent projects</h3>
+            <p><a href='http://www.youtube.com/watch?v=hptRVxewob4'>golden gate</a> a timelapse I made with a focus on the Golden Gate Bridge and what it means to San Franciscans</p>
+            <p><a href='photo/'>photography</a> a mosaic of photographs I've taken while traveling</p>
+            <p><a href='http://sectorexplorer.com'>sector explorer</a> explore similar companies via an interactive d3 force diagram
+            <p><a href='http://www.youtube.com/watch?v=NOdG7VRy4j4'>med-e</a> a visualization plaform for energy which displays transmission lines, power plants, renewable energy centers, and oil &amp; gas infrastructure</p>
+            <p><a href='http://findyourself.in'>findyourself.in</a> a collection of zen-like moments from around the world</p>
+            <p><a href='http://amplify.aws.af.cm/'>amplify</a> a small web service which visualizes reddit comments temporally using d3</p>
+        </div>
+        <div id='contact' class='one-third column'>
+            <h3>get in touch</h3>
+            <p>If you find yourself in the Bay Area and would like to meet up, or you'd like to find out more about what I'm doing, please don't hesitate to reach out...</p>
+            
+                <script type="text/javascript" language="javascript">
+                <!--
+                 // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+                 // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+                 // This code is freeware provided these four comment lines remain intact
+                 // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+                {
+                    coded = "UZfNRKr@xRrZgW.5w"
+                    key = "e0BvtLAxRmVpF12qnK9TEWI7MhUzCcy4ugk3YlDsXiNPO8fHd5oSbar6wJZGQj"
+                    shift = coded.length
+                    link = ""
+                    for (i = 0; i < coded.length; i++) {
+                        if (key.indexOf(coded.charAt(i)) == -1) {
+                            ltr = coded.charAt(i)
+                            link += (ltr)
+                        } else {
+                            ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length
+                            link += (key.charAt(ltr))
+                        }
+                    }
+                    document.write("<a href='mailto:" + link + "'>email</a>")
+                }
+                 //-->
+                </script>
+                <noscript>Sorry, you need Javascript on to email me.</noscript>
+             
+            <a href='http://www.linkedin.com/in/mbalint'>linkedin</a>
+             
+            <a href='https://twitter.com/michaelbalint'>twitter</a>
+            
+        </div>
+    </div>
+    <script src='js/simplex-noise-min.js'></script>
+    <script src='js/aurora-fast-min.js'></script>
+</body>
+
+</html>
