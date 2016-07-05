@@ -1,6 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
 }
 #loader {
     position: fixed;
@@ -63,11 +68,6 @@ h1 b {
     color: #888;
     font-size: 20px;
 }
-body {
-    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #fff;
-    color: #000;
-}
 #main {
     margin: 20px 30px;
 }
@@ -101,12 +101,19 @@ img {
     left: 45px;
 }
 #poster {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 0 !important;
+    margin: 0;
+}
+#poster img {
     width: 100%;
     margin-bottom: 1%;
 }
 #container {
     clear: both;
-    margin: 0% 2%;
+    margin: 0% 1%;
 }
 #donate {
     text-align: center;
@@ -154,7 +161,7 @@ img {
     background: rgba(0, 0, 0, 0.8);
 }
 /* packery stuff */
- .gutter-sizer {
+.gutter-sizer {
     width: 1%;
 }
 .grid-sizer {
